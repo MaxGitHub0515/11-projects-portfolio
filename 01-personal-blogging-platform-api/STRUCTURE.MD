@@ -2,7 +2,7 @@
 # 🚀 MERN Application
 # 🔥*Backend Structure (Node.js + Express + MongoDB)*
 
-*The following is the reusable directory structure for the backend of a Node.js and Express applications.*
+*The following is the directory structure for the backend of a Node.js and Express application.*
 
 ## /server
 - **/models**: Database models (MongoDB models)
