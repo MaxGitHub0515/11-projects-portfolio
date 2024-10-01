@@ -1,0 +1,30 @@
+{
+  "name": "11-projects-portfolio",
+  "private": true,
+  "workspaces": [
+    "01-personal-blogging-platform-api",
+    "02-to-do-list-api",
+    "03-weather-api-wrapper-service",
+    "04-expense-tracker-api",
+    "05-markdown-note-taking-app",
+    "06-url-shortening-service",
+    "07-real-time-polling-app",
+    "08-simple-e-commerce-api",
+    "09-fitness-workout-tracker",
+    "10-recipe-sharing-platform",
+    "11-movie-reservation-system"
+  ],
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-async-errors": "^3.1.1",
+    "http-status-codes": "^2.3.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.7.0",
+    
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
