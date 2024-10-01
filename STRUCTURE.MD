@@ -89,3 +89,8 @@
 - `package.json`: React dependencies and scripts
 - `.env`: Environment variables
 
+## ⚙️*Configuration*
+- **/root**: Config Folder
+  - `package.json`: Monorepo Structure
+
+

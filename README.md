@@ -20,9 +20,11 @@ Each project varies in difficulty, allowing for a gradual progression and employ
   - [*10-recipe-sharing-platform*](10-recipe-sharing-platform/server/)
 
 - **HARD**
-  - [*11-movie-reservation-system*](11-movie-reservation-system/server/)  
+  - [*11-movie-reservation-system*](11-movie-reservation-system/server/)
 
 ##
+
+
 
 ### The ideas're taken from the following 🔥[Website](https://roadmap.sh/backend/project-ideas) 
 My sincere thanks to the author! 🙏✨
