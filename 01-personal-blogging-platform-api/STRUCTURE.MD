@@ -87,5 +87,5 @@
     - `userSlice.js`: Redux slice for user state
 
 - `package.json`: React dependencies and scripts
-- `.env`: Environment variables
+- `.env`: Storing Environment variables
 
