@@ -1,0 +1,2 @@
+// RENDERING THE APP
+

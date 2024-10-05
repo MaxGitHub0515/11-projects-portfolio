@@ -10,6 +10,7 @@
     "bson": "^6.8.0",
     "bytes": "^3.1.2",
     "call-bind": "^1.0.7",
+    "chalk": "^5.3.0",
     "content-disposition": "^0.5.4",
     "content-type": "^1.0.5",
     "cookie": "^0.6.0",
@@ -82,7 +83,6 @@
     "webidl-conversions": "^7.0.0",
     "whatwg-url": "^13.0.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
