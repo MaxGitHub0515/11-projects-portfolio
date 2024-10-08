@@ -25,10 +25,11 @@ const start = async () => {
       }
     } catch (error) {
         if(error){
-            console.log(error);console.log("|||--CAUGHT A CONNECT_DB ERROR OR A SERVER ERROR--|||".red)
+            console.log(error); console.log("|||--CAUGHT A CONNECT_DB ERROR OR A SERVER ERROR--|||".red)
         }
      
     }
 };
-start();
 
+
+module.exports = start;

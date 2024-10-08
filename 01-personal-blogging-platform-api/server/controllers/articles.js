@@ -4,15 +4,15 @@ const asyncWrapper = require('../middleware/async')
 const { createCustomError } = require('../errors/custom-error')
 const { StatusCodes } = require('http-status-codes');
 
-const getAllArticles = asyncWrapper(async (req,res)) => {
+const getAllArticles = asyncWrapper(async (req,res) => {
     const articles = await Article.find({});
     res.status(StatusCodes.OK).json({articles})
-}
+})
 
 const createArticle = asyncWrapper(async (req, res) => {
-    const task = await Article.create(req.body)
+    const article = await Article.create(req.body)
     res.status(StatusCodes.CREATED).json({ article })
-  })
+})
 
 
 const getArticle = asyncWrapper(async (req, res, next) => {
