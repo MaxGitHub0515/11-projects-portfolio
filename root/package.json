@@ -13,63 +13,49 @@
     "09-fitness-workout-app",
     "10-recipe-sharing-app",
     "11-movie-reservation-app"
-
   ],
   "scripts": {
     "start:blog": "npm-run-all --parallel start:blog-client start:blog-server",
     "start:blog-client": "npm --workspace 01-personal-blog/client start",
     "start:blog-server": "npm --workspace 01-personal-blog/server start",
-
     "start:todo": "npm-run-all --parallel start:todo-client start:todo-server",
     "start:todo-client": "npm --workspace 02-to-do-list-api/client start",
     "start:todo-server": "npm --workspace 02-to-do-list-api/server start",
-
     "start:weather": "npm-run-all --parallel start:weather-client start:weather-server",
     "start:weather-client": "npm --workspace 03-weather-api/client start",
     "start:weather-server": "npm --workspace 03-weather-api/server start",
-
     "start:expense": "npm-run-all --parallel start:expense-client start:expense-server",
     "start:expense-client": "npm --workspace 04-expense-tracker/client start",
     "start:expense-server": "npm --workspace 04-expense-tracker/server start",
-
     "start:markdown": "npm-run-all --parallel start:markdown-client start:markdown-server",
     "start:markdown-client": "npm --workspace 05-markdown-notes-app/client start",
     "start:markdown-server": "npm --workspace 05-markdown-notes-app/server start",
-
     "start:url-shortening": "npm-run-all --parallel start:url-shortening-client start:url-shortening-server",
     "start:url-shortening-client": "npm --workspace 06-url-shortening-service/client start",
     "start:url-shortening-server": "npm --workspace 06-url-shortening-service/server start",
-
     "start:polling": "npm-run-all --parallel start:polling-client start:polling-server",
     "start:polling-client": "npm --workspace 07-real-time-polling-app/client start",
     "start:polling-server": "npm --workspace 07-real-time-polling-app/server start",
-
     "start:ecommerce": "npm-run-all --parallel start:ecommerce-client start:ecommerce-server",
     "start:ecommerce-client": "npm --workspace 08-simple-e-commerce/client start",
     "start:ecommerce-server": "npm --workspace 08-simple-e-commerce/server start",
-
     "start:fitness": "npm-run-all --parallel start:fitness-client start:fitness-server",
     "start:fitness-client": "npm --workspace 09-fitness-workout-app/client start",
     "start:fitness-server": "npm --workspace 09-fitness-workout-app/server start",
-
     "start:recipe": "npm-run-all --parallel start:recipe-client start:recipe-server",
     "start:recipe-client": "npm --workspace 10-recipe-sharing-app/client start",
     "start:recipe-server": "npm --workspace 10-recipe-sharing-app/server start",
-
     "start:movie": "npm-run-all --parallel start:movie-client start:movie-server",
     "start:movie-client": "npm --workspace 11-movie-reservation-app/client start",
     "start:movie-server": "npm --workspace 11-movie-reservation-app/server start",
-
     "install:all": "npm install"
   },
-  
-  
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "dotenv": "^16.4.5",
     "express": "^4.21.0",
     "express-async-errors": "^3.1.1",
-  
+    "http-status-codes": "^2.3.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.7.0",
     "react": "^18.3.1",
