@@ -5,7 +5,7 @@ const ArticleSchema = mongoose.Schema({
 
     imgUrl:{
         type: String,
-        required:true
+        required: true
     },
     createdAt:{
         type: Data,
@@ -13,14 +13,14 @@ const ArticleSchema = mongoose.Schema({
     },
     title:{
         type:String,
-        required: true,
+        required: [true, 'Please provide an article title']
         minlength: 15,
         maxlength: 60
     
     },
     content:{
         type:String,
-        required:true,
+        required:[true, 'Please provide article content']
         minlength:15,
         maxlength:100
 
