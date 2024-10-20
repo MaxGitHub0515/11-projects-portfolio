@@ -3,7 +3,7 @@
 
 ## 📝Task Contents 
 
-### *This implies that you'd have to create a backend API with the following responsibilities:*
+### *You'd have to create a backend API with the following responsibilities:*
 - [**Return a list of articles. You can add filters such as publishing date, or tags.**]()
 - [**Return a single article, specified by the ID of the article.**]()
 - [**Create a new article to be published.**]()
