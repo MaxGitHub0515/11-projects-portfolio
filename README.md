@@ -6,8 +6,8 @@ Each project varies in difficulty, allowing for a gradual progression and employ
 
 ## Table of Contents
 - **EASY**
-  - [*01-personal-blogging-platform-api*](01-personal-blogging-platform-api/server/) - [**README.MD**](01-personal-blogging-platform-api\server\README.MD)
-  - [*02-to-do-list-api*](02-to-do-list-api/server/) - [**READ.MD**](02-to-do-list-api\server\README.MD)
+  - [*01-personal-blogging-platform-api*](01-personal-blogging-platform-api/server/)
+  - [*02-to-do-list-api*](02-to-do-list-api/server/) 
   - [*03-weather-api-wrapper-service*](03-weather-api-wrapper-service/server/)
   - [*04-expense-tracker-api*](04-expense-tracker-api/server/)
 
