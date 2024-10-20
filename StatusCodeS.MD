@@ -19,7 +19,7 @@ Code	Constant	Reason Phrase
 305	USE_PROXY	Use Proxy
 307	TEMPORARY_REDIRECT	Temporary Redirect
 308	PERMANENT_REDIRECT	Permanent Redirect
-400	BAD_REQUEST	Bad Request
+400	BAD_REQUEST	Bad Request, Indicates issues with the client's request.
 401	UNAUTHORIZED	Unauthorized
 402	PAYMENT_REQUIRED	Payment Required
 403	FORBIDDEN	Forbidden
