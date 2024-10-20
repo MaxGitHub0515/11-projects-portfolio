@@ -3,7 +3,7 @@
 
 ## 📝Task Contents 
 
-### *This implies that you'd have to create a backend API with the following responsibilities:*
+### *You'd have to create a backend API with the following responsibilities:*
 - [**An authentication logic, which means you’ll have to keep a new table of users and their credentials**]()
 - [**You’ll have to create both users and tasks.**]()
 - [**You’ll also have to be able to update tasks (their status) and even delete them.**]()
