@@ -26,8 +26,8 @@ Each project varies in difficulty, allowing for a gradual progression and employ
 
 
 
-### The ideas're taken from the following 🔥[Website](https://roadmap.sh/backend/project-ideas) 
-My sincere thanks to the author! 🙏✨
+### The ideas're taken from the following 🔥[Website](https://www.figma.com/community/file/1287029163993360080/simple-todo-list-design) 
+My sincere thanks to the author! ✨
 
 **CREATED BY MAX PAVLOVSKYI**
 - [**🔗Visit My LinkedIn**](https://www.linkedin.com/in/maksym-pavlovskyi-536647267/)

@@ -10,4 +10,14 @@
 - [**Get a list of tasks, filter them by status and get the details of each one.**]()
 
 
+## 🔥Design Project Demo
+
+![SCREENSHOT](../DESIGN/assets/light%20theme/preview-to-do.png)
+
+### The ideas for the design are taken from the following  🔥[Website](https://roadmap.sh/backend/project-ideas) 
+My sincere thanks to the author! ✨
+
+
+
+
 
