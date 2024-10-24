@@ -1,6 +1,5 @@
-## Design Project Demo
+## 🔥Design Project Demo
 
-![SCREENSHOT](../DESIGN/assets/img/Group-47.png)
+![SCREENSHOT](../DESIGN/assets/light%20theme/MAIN%20(Light%20scheme).png)
 
 
-![alt text](image.png)
