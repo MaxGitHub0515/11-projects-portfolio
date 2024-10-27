@@ -14,10 +14,50 @@
 
 ![SCREENSHOT](../DESIGN/assets/light%20theme/preview-to-do.png)
 
+## 🔥Setup
+
+- **Clone the repository:**
+
+   ```bash
+   git clone <repository-url>
+   cd <repository-folder>
+
+### CLient
+- **Start the React App:**
+  - `npm start`
+
+- **Build the App:**
+  - `npm run build`
+  
+- **Run Tests:**
+  - `npm test`,
+- **Linting:**
+  - `npm run lin~`
+  - 
+### Server-side
+- **Start the Server**
+  - `npm start`
+- **Build the App:**
+  - `npm run build`
+  
+- **Development Mode:**
+  - `npm test`,
+- **Linting:**
+  - `npm run lint
+`
+- **Deploy:**
+  - `npm run deploy
+`
+  
+
+
 ### The ideas for the design are taken from the following  🔥[Website](https://roadmap.sh/backend/project-ideas) 
 My sincere thanks to the author! ✨
 
 
+## License
+*This project is licensed under the MIT License. See the LICENSE file for details.*
 
+*This README covers both backend and frontend instructions in one file, including setup, running, testing, linting, and build commands.*
 
 
