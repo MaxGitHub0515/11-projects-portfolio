@@ -1,15 +1,18 @@
 {
-  "name": "01-personal-blogging-platform-api",
+  "name": "02-to-do-list-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "colors": "^1.4.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+  
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-
-  }
+  "license": "ISC"
 }
