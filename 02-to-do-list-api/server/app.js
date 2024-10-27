@@ -1,9 +1,9 @@
 
 const express = require('express');
 const app = express();
-
+/*
 const articles = require('./routes/articles');
-
+*/
 
 const notFound = require('./middleware/not-found');
 const errorHandlerMiddleware = require('./middleware/error-handler');

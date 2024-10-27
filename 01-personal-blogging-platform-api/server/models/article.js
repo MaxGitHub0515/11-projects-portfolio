@@ -1,5 +1,6 @@
 
 const mongoose = require('mongoose');
+const { DataView } = require('webidl-conversions');
 
 const ArticleSchema = mongoose.Schema({
 
@@ -8,19 +9,19 @@ const ArticleSchema = mongoose.Schema({
         required: true
     },
     createdAt:{
-        type: Data,
+        type: Date,
         default: Date.now()
     },
     title:{
         type:String,
-        required: [true, 'Please provide an article title']
+        required: [true, 'Please provide an article title'],
         minlength: 15,
         maxlength: 60
     
     },
     content:{
         type:String,
-        required:[true, 'Please provide article content']
+        required:[true, 'Please provide article content'],
         minlength:15,
         maxlength:100
 
