@@ -32,8 +32,8 @@
 - **Run Tests:**
   - `npm test`,
 - **Linting:**
-  - `npm run lin~`
-  - 
+  - `npm run lint`
+  
 ### Server-side
 - **Start the Server**
   - `npm start`
