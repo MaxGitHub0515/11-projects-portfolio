@@ -31,20 +31,30 @@
   
 - **Run Tests:**
   - `npm test`,
+
 - **Linting:**
   - `npm run lint`
   
 ### Server-side
 - **Start the Server**
   - `npm start`
-- **Build the App:**
-  - `npm run build`
-  
-- **Development Mode:**
-  - `npm test`,
+
+- **Start the Server with nodemon**
+  - `npm run dev`
+
+- **Testing with Jest:**
+  - `npm test`
+
 - **Linting:**
   - `npm run lint
 `
+
+- **Build the App:**
+  - `npm run build`
+  
+- **Prepare the App:**
+  - `npm run prepare`
+  
 - **Deploy:**
   - `npm run deploy
 `
