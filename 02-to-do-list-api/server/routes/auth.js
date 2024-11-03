@@ -9,8 +9,8 @@ const {
    
 } = require('../controllers/');
 
-router.route('/').get().post();
-router.route()
+// router.route('/').get().post();
+// router.route()
 
 
 
