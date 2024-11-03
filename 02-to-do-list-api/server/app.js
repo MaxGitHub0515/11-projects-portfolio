@@ -16,6 +16,7 @@ const notFound = require('./middleware/not-found');
 const errorHandlerMiddleware = require('./middleware/error-handler');
 
 
+
 //optional
 require('colors');
 
@@ -30,15 +31,18 @@ app.use(express.json());
 // routes App
 
 app.use('/api/v1/auth', authRouter)
-app.use('/api/v1/tasks', tasksRouter);
-
-app.use('/api/v1/tasks', (req,res) => {
-    res.send(`
-    <h1>Up and running</h1>
-    <h3>Getting all tasks</h3>
-`)
-
+app.use('/api/v1/auth', (req,res) => {
+  const msg = "Loaded Successfully Auth Page";
+  res.json({msg})
 })
+  
+
+app.use('/api/v1/tasks', tasksRouter);
+app.use('/api/v1/tasks', (req,res) => {
+  const msg = "Loaded Successfully Tasks Page";
+  res.json({msg})
+})
+  
 
 // middleware
 app.use(notFound);
