@@ -4,11 +4,17 @@ const { StatusCodes } = require('http-status-codes');
 const  {BadRequestError, UnauthenticatedError}  = require('../errors');
 
 
-const signUp = async(req,res) =>{
-    const user = await User.create({...req.body})
-    const token = user.createJWT();
-    res.status(StatusCodes.CREATED).json({ user: { name: user.name }, token })
+const register = asyncWrapper(async (req,res) => {
+    res.send('register user');
+    
+})
+const login = asyncWrapper(async (req,res) => {
+    res.send('login user');
+
+})
+
+
+module.exports = {
+    register,
+    login
 }
-
-
-

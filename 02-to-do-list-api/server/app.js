@@ -8,7 +8,7 @@ require('dotenv').config();
 
 // import routes
 const tasksRouter = require('./routes/tasks');
-// const authRouter = require('./routes/auth')
+const authRouter = require('./routes/auth')
 
 
 
@@ -30,6 +30,7 @@ app.use(express.json());
   
 // routes App
 
+app.use('/api/v1/auth', authRouter)
 app.use('/api/v1/tasks', tasksRouter);
 
 app.use('/api/v1/tasks', (req,res) => {
