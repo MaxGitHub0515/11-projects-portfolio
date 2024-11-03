@@ -1,9 +1,9 @@
 
 const express = require('express');
 const app = express();
-const cors = require('cors')
 const connectDB = require('./db/connect');
 require('dotenv').config();
+const cors = require('cors')
 
 
 // import routes
@@ -26,7 +26,6 @@ app.use(express.static('../client/public'))
 app.use(express.json());
 
 
-
   
 // routes App
 
@@ -40,8 +39,6 @@ app.use('/api/v1/tasks', (req,res) => {
 `)
 
 })
-// app.use('/api/v1/auth', authRouter);
-
 
 // middleware
 app.use(notFound);
