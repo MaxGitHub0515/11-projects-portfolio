@@ -4,6 +4,7 @@ const app = express();
 const connectDB = require('./db/connect');
 require('dotenv').config();
 const cors = require('cors')
+const {createCustomError} = require('./errors')
 
 
 // import routes
@@ -14,6 +15,8 @@ const authRouter = require('./routes/auth')
 
 const notFound = require('./middleware/not-found');
 const errorHandlerMiddleware = require('./middleware/error-handler');
+const { prototype } = require('stream');
+const { StatusCodes } = require('http-status-codes');
 
 
 
@@ -48,26 +51,29 @@ app.use('/api/v1/tasks', (req,res) => {
 app.use(notFound);
 app.use(errorHandlerMiddleware);
 
-const PORT = process.env.PORT;
-const MONGO_URI = process.env.MONGO_URI || 8000;
+const port = process.env.PORT || 8000;
+
 
 const start = async () => {
     try {
-      app.listen(PORT, () =>
-        console.log(`Server is listening on port ${PORT}...`.green)
+      app.listen(port, () =>
+        console.log(`Server is listening on port ${port}...`.green)
       );
-      await connectDB(process.env.MONGO_URI);
+      await connectDB(process.env.MONGO_URI)
       if(connectDB ){
        console.log('Successfully Connected To The DB!'.green);
 
       }
     } catch (error) {
         if(error){
-            console.log(error); console.log("|||--CAUGHT A CONNECT_DB ERROR OR A SERVER ERROR--|||".red)
+          console.log(error);
+         console.log("|||--CAUGHT A CONNECT_DB ERROR OR A SERVER ERROR--|||".red)
+           
         }
      
     }
 };
+
 
 start()
 
