@@ -1,6 +1,5 @@
 
 const mongoose = require('mongoose');
-const { DataView } = require('webidl-conversions');
 
 const ArticleSchema = mongoose.Schema({
 
@@ -27,3 +26,5 @@ const ArticleSchema = mongoose.Schema({
 
     }
 })
+
+module.exports = mongoose.model('Article', ArticleSchema)
