@@ -14,7 +14,7 @@ const connectDB = require('./db/connect');
 
 
 // built-in middleware
-//  app.use(express.static('../client/public'))
+  app.use(express.static('../client/public'))
  app.use(express.json());
 
 
@@ -40,8 +40,8 @@ require('colors');
 
 
 // App Middleware
-// app.use(notFound);
-// app.use(errorHandlerMiddleware);
+ app.use(notFound);
+  app.use(errorHandlerMiddleware);
 
 const PORT = process.env.PORT;
 

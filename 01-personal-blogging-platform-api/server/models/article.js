@@ -1,4 +1,5 @@
 
+const { truncate } = require('fs/promises');
 const mongoose = require('mongoose');
 
 const ArticleSchema = mongoose.Schema({
@@ -7,10 +8,7 @@ const ArticleSchema = mongoose.Schema({
         type: String,
         required: true
     },
-    createdAt:{
-        type: Date,
-        default: Date.now()
-    },
+
     title:{
         type:String,
         required: [true, 'Please provide an article title'],
@@ -24,7 +22,9 @@ const ArticleSchema = mongoose.Schema({
         minlength:15,
         maxlength:100
 
-    }
-})
+    },
+  
+}, {timestamps: true})
+
 
 module.exports = mongoose.model('Article', ArticleSchema)
