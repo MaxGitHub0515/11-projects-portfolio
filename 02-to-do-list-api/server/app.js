@@ -1,29 +1,38 @@
 
 const express = require('express');
 const app = express();
+
+// database
 const connectDB = require('./db/connect');
+
+//configuring dotenv
 require('dotenv').config();
+
+// Packages: Security checks etc 
 const cors = require('cors')
-const {createCustomError} = require('./errors')
 
 
-// import routes
+
+//  routers
 const tasksRouter = require('./routes/tasks');
 const authRouter = require('./routes/auth')
 
 
-
+// middleware imports
 const notFound = require('./middleware/not-found');
 const errorHandlerMiddleware = require('./middleware/error-handler');
-const { prototype } = require('stream');
-const { StatusCodes } = require('http-status-codes');
 
 
 
-//optional
+
+//optional for npm 
 require('colors');
 
 
+// ---> 
+/* Upcoming testing is scheduled to happen soon.
+Last update - 11.11.2024
+ */ 
 
 app.use(cors())
 app.use(express.static('../client/public'))
@@ -34,17 +43,8 @@ app.use(express.json());
 // routes App
 
 app.use('/api/v1/auth', authRouter)
-app.use('/api/v1/auth', (req,res) => {
-  const msg = "Loaded Successfully Auth Page";
-  res.json({msg})
-})
-  
-
 app.use('/api/v1/tasks', tasksRouter);
-app.use('/api/v1/tasks', (req,res) => {
-  const msg = "Loaded Successfully Tasks Page";
-  res.json({msg})
-})
+
   
 
 // middleware

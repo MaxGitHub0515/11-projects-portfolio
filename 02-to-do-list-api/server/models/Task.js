@@ -2,6 +2,7 @@
 
 
 const mongoose =  require('mongoose');
+const { PerformanceNodeTiming } = require('perf_hooks');
 
 const TaskSchema = new mongoose.Schema({
     title:{
@@ -22,21 +23,14 @@ const TaskSchema = new mongoose.Schema({
 
     status:{
         type:String,
-        enum: ['pending', 'in progress', 'completed'],
-        default:'pending',
+        enum: { 
+        values:['pending', 'in progress', 'completed'],
+        message:'{VALUE} is not supported'
+        },
+        default:"pending"
+        // enum:['pending', 'in progress', 'completed'],
     },
-     createdAt:{
-        type:Date,
-        default: Date.now,
-
-     },
-
-     updatedAt:{
-        type:Date,
-        default:Date.now
-     }
-
-})
+}, {timestamps: true})
 
 
-module.exports = mongoose.model('Task', TaskSchema)
+module.exports = mongoose.model('Task', TaskSchema, "tasks")

@@ -3,7 +3,7 @@
 const express = require('express');
 const app = express();
 
-//imported routes
+//imported routers
 const articles = require('./routes/articles');
 
 //configuring dotenv
