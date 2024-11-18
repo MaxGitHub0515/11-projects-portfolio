@@ -61,7 +61,7 @@
   
 
 
-### The ideas for the design are taken from the following  🔥[Website](https://roadmap.sh/backend/project-ideas) 
+### The ideas for the design are taken from the following  🔥[Website](https://www.figma.com/community/file/1287029163993360080/simple-todo-list-design) 
 My sincere thanks to the author! ✨
 
 
