@@ -1,32 +1,32 @@
 {
-  "name": "11-projects-portfolio",
-  "private": true,
-  "workspaces": [
-    "01-personal-blog",
-    "02-to-do-list-api",
-    "03-weather-api",
-    "04-expense-tracker",
-    "05-markdown-notes-app",
-    "06-url-shortening-service",
-    "07-real-time-polling-app",
-    "08-simple-e-commerce",
-    "09-fitness-workout-app",
-    "10-recipe-sharing-app",
-    "11-movie-reservation-app"
-  ],
-  "scripts": {},
-  "dependencies": {
-    "dotenv": "^16.4.5"
+    "name": "11-projects-portfolio",
+    "private": true,
+    "workspaces": [
+        "01-personal-blog",
+        "02-to-do-list-api",
+        "03-weather-api/server",
+        "04-expense-tracker",
+        "05-markdown-notes-app",
+        "06-url-shortening-service",
+        "07-real-time-polling-app",
+        "08-simple-e-commerce",
+        "09-fitness-workout-app",
+        "10-recipe-sharing-app",
+        "11-movie-reservation-app"
+    ],
+    "scripts": {},
+    "dependencies": {
+        "dotenv": "^16.4.5"
 
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.20",
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "eslint": "^9.13.0",
-    "jest": "^29.7.0",
-    "nodemon": "^3.1.7",
-    "postcss": "^8.4.47",
-    "tailwindcss": "^3.4.14"
-  }
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.20",
+        "babel-cli": "^6.26.0",
+        "babel-preset-env": "^1.7.0",
+        "eslint": "^9.13.0",
+        "jest": "^29.7.0",
+        "nodemon": "^3.1.7",
+        "postcss": "^8.4.47",
+        "tailwindcss": "^3.4.14"
+    }
 }
