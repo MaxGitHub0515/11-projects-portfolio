@@ -21,7 +21,7 @@
     "dev": "nodemon app.js",
     "test": "jest",
     "lint": "eslint .",
-    "build": "babel src -d dist",
+    "build": "",
     "prepare": "npm run build",
     "deploy": "npm run build && node dist/server.js"
   },
