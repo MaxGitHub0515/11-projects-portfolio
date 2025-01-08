@@ -8,10 +8,12 @@
         "body-parser": "^1.20.3",
         "colors": "^1.4.0",
         "cors": "^2.8.5",
+        "dotenv": "^16.4.7",
         "express": "^4.21.0",
         "express-async-errors": "^3.1.1",
         "helmet": "^8.0.0",
         "http-status-codes": "^2.3.0",
+        "jest": "^29.7.0",
         "jsonwebtoken": "^9.0.2",
         "mongoose": "^8.7.0",
         "morgan": "^1.10.0"
@@ -21,14 +23,18 @@
         "dev": "nodemon app.js",
         "test": "jest",
         "lint": "eslint .",
+        "link:fix": "eslint . --fix",
         "build": "babel src -d dist",
         "prepare": "npm run build",
-        "deploy": "npm run build && node dist/server.js"
+        "deploy": "npm run build && node dist/app.js"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "devDependencies": {
+        "@babel/cli": "^7.26.4",
+        "@babel/core": "^7.26.0",
+        "@babel/preset-env": "^7.26.0",
         "nodemon": "^3.1.7"
     }
 }
