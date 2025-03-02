@@ -27,3 +27,5 @@ const UserSchema =  new mongoose.Schema({
         minlength:[8, messages.User.pwd.minLength]
     }
 })
+
+export default mongoose.model('User', UserSchema, "user")
