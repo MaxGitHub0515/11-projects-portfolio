@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 import messages from "../config/msg.js";
-
+import jwt from "jsonwebtoken";
+import bcryptJS from "bcryptjs"
 
 const UserSchema =  new mongoose.Schema({
     username:{
@@ -28,4 +29,19 @@ const UserSchema =  new mongoose.Schema({
     }
 })
 
+UserSchema.pre('save',  async () => {
+    const salt = await bcryptJS.genSalt(10);
+    this.password = await bcryptJS.hash(this.password, salt);
+})
+
+UserSchema.methods.createJWT = function() {
+    return jwt.sign(
+        //
+    )
+}
+
+UserSchema.methods.comparePassword = async (candidatePwd) => {
+    const isMatch = await bcryptJS.compare(candidatePwd, this.password);
+    return isMatch;
+}
 export default mongoose.model('User', UserSchema, "user")
