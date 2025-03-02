@@ -13,5 +13,5 @@ const asyncWrapper = (fn) => {
   }
 
 
-  module.exports = asyncWrapper;
+export default asyncWrapper;
   
